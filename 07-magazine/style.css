@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  background: #1a1a2e;
+  color: white;
+  padding: 30px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ჟურნალის grid */
+.magazine {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);   /* 4 თანაბარი სვეტი */
+  grid-auto-rows: 150px;                   /* ყველა მწკრივის სიმაღლე 150px */
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* საერთო ბარათის სტილი */
+.card {
+  background: #16213e;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* დიდი ბარათი - 2 სვეტი და 2 მწკრივი */
+.big {
+  grid-column: span 2;     /* 2 სვეტი იკავოს */
+  grid-row: span 2;        /* 2 მწკრივი იკავოს */
+  background: linear-gradient(135deg, #e94560, #f47b89);
+  font-size: 20px;
+  flex-direction: column;
+}
+
+.big h2 { margin-bottom: 10px; }
+
+.card h3 {
+  color: #f47b89;
+}

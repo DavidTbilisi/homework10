@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დავალება 11 - მუსიკალური აპლიკაცია</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- მარცხენა sidebar -->
+    <aside class="sidebar">
+      <h2>🎵 MusicApp</h2>
+      <nav>
+        <p>🏠 მთავარი</p>
+        <p>🔍 ძიება</p>
+        <p>📚 ბიბლიოთეკა</p>
+      </nav>
+      <h3>პლეილისთები</h3>
+      <ul>
+        <li>საყვარელი სიმღერები</li>
+        <li>გაშვება სამუშაოდ</li>
+        <li>დასვენება</li>
+        <li>სპორტი</li>
+      </ul>
+    </aside>
+
+    <!-- მთავარი ხედი - ალბომების grid -->
+    <main class="main">
+      <h2>პოპულარული ალბომები</h2>
+      <div class="albums">
+        <div class="album"><img src="https://picsum.photos/id/200/200" alt=""><p>ალბომი 1</p></div>
+        <div class="album"><img src="https://picsum.photos/id/201/200" alt=""><p>ალბომი 2</p></div>
+        <div class="album"><img src="https://picsum.photos/id/202/200" alt=""><p>ალბომი 3</p></div>
+        <div class="album"><img src="https://picsum.photos/id/203/200" alt=""><p>ალბომი 4</p></div>
+        <div class="album"><img src="https://picsum.photos/id/204/200" alt=""><p>ალბომი 5</p></div>
+        <div class="album"><img src="https://picsum.photos/id/205/200" alt=""><p>ალბომი 6</p></div>
+      </div>
+    </main>
+
+    <!-- ქვედა player -->
+    <div class="player">
+      <div class="track-info">
+        <img src="https://picsum.photos/id/200/60" alt="">
+        <div>
+          <p class="track-name">სიმღერის სახელი</p>
+          <p class="artist">შემსრულებელი</p>
+        </div>
+      </div>
+      <div class="controls">
+        <button>⏮️</button>
+        <button class="play">▶️</button>
+        <button>⏭️</button>
+      </div>
+      <div class="volume">
+        🔊 <input type="range" min="0" max="100" value="60">
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
